@@ -49,7 +49,7 @@ def userInput(): #Asks the user to select a menu option. If any menu item is sel
     
 
 def inputTest(inputVar): #Accepts one value from userInput(). Tests value to make sure it's a number. If it's not a number, it will ask for a valid number. This is one of the few times you can have a user input values in a function other than "userInput(). Returns valid numbers.
-    while type(inputVar) != int:
+    while True:
             try:
                 inputVar = float(inputVar)
             except:
